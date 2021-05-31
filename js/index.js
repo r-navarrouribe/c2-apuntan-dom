@@ -42,3 +42,15 @@ for (const { nombre, foto, profesion, estado, twitter, marcado } of senyores) {
 
   principal.append(senyorElemento);
 }
+
+// Contador de senyores marcados
+
+const contadorSenyores = document.querySelector(".contador-marcados");
+
+let contadorSenyoresMarcados = 0;
+for (const { marcado } of senyores) {
+  if (marcado) {
+    contadorSenyoresMarcados++;
+  }
+}
+contadorSenyores.textContent = `${contadorSenyoresMarcados} señores que te apuntan con el dedo marcados`;
