@@ -40,6 +40,15 @@ for (const { nombre, foto, profesion, estado, twitter, marcado } of senyores) {
       ? segundaPalabra.slice(0, 1)
       : primeraPalabra.slice(0, 1);
 
+  // Marcado?
+
+  const iconoMarcado = senyorElemento.querySelector(".icono");
+  const imgMarcada = senyorElemento.querySelector("img");
+  if (marcado) {
+    iconoMarcado.classList.add("icono-marcado");
+    imgMarcada.classList.add("img-marcada");
+  }
+
   principal.append(senyorElemento);
 }
 

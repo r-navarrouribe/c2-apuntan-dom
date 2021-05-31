@@ -56,3 +56,15 @@ body {
 .senyor-molde {
   display: none;
 }
+
+.marcado img {
+  transform: scaleX(-1);
+}
+
+.icono-marcado {
+  display: block;
+}
+
+.img-marcada {
+  transform: scaleX(-1);
+}
