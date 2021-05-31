@@ -63,3 +63,9 @@ for (const { marcado } of senyores) {
   }
 }
 contadorSenyores.textContent = `${contadorSenyoresMarcados} señores que te apuntan con el dedo marcados`;
+
+const senyoresTotales = 3;
+const botonMarcarTodos = document.querySelector(".boton-marcar");
+botonMarcarTodos.onclick = function marcarTodos() {
+  console.log("He intentado marcar todos pero no he podido y lo he dejado así");
+};
